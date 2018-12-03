@@ -144,6 +144,7 @@ function init (options) {
     options.base || nodePath.join(__dirname, '../..')
   )
   var packagePath = base.replace(/\/package\.json$/, '') + '/package.json'
+  throw new Error('packagePath' + packagePath)
 
   try {
     var npmPackage = require(packagePath)
