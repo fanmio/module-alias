@@ -127,6 +127,8 @@ function reset () {
   moduleAliases = {}
 }
 
+throw new Error('11')
+
 /**
  * Import aliases from package.json
  * @param {object} options
